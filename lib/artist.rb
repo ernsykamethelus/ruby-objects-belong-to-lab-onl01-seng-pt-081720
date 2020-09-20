@@ -1,3 +1,9 @@
 require "spec_helper"
 
-3
+describe "Artist" do 
+  it "has a name" do
+    artist = Artist.new
+    artist.name = "Beyonce" 
+    expect(artist.name).to eq("Beyonce")
+  end
+end
